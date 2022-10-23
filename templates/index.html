@@ -12,15 +12,16 @@
       crossorigin="anonymous"
     />
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&family=Poppins:wght@400;500;600;700&display=swap')
       body {
-        font-family: sans-serif;
+        font-family: 'Poppins';
       }
 
       .title {
         display: block;
         padding: 15px;
         width: 100%;
-        background-color: cornflowerblue;
+        background-color: pink;
         color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       }
@@ -38,7 +39,7 @@
         width: 60%;
         padding: 10px;
         border: 0;
-        border-bottom: 1px solid cornflowerblue;
+        border-bottom: 1px solid pink;
         font-weight: bold;
       }
 
@@ -48,7 +49,7 @@
 
       .input-form > input:focus {
         outline: 0;
-        border-bottom: 2px solid cornflowerblue;
+        border-bottom: 2px solid pink;
       }
 
       .input-form > input:focus::placeholder {
@@ -56,7 +57,7 @@
       }
 
       .input-form > input::placeholder {
-        color: cornflowerblue;
+        color: pink;
         font-weight: normal;
       }
     </style>
@@ -76,7 +77,7 @@
                 <label class="pb-2 input-group-text" for="age"
                   >Age</label
                 >
-                <select class="form-select" id="age" name="age">
+                <select class="form-select" aria-label="Select Option" id="age" name="age" required>
                   <option value="2">Youth</option>
                   <option value="0">Middle Aged</option>
                   <option value="1">Senior</option>
